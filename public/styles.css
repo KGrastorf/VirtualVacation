@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+header {
+  height: 80px;
+  width: 100vw;
+  background-color: rgb(148, 185, 218);
+  margin: 0;
+  padding: 0;
+  background-image: url("images/Clouds Banner.png");
+  background-position: center;
+  background-size: 500vh;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 40px;
+}
+
+.tabs {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.link {
+  padding-left: 15px;
+  vertical-align: middle;
+  padding-top: 20px;
+}
+
+.view {
+  margin-left: 30px;
+}
+
+#left-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;;
+}
