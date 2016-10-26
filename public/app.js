@@ -9,17 +9,17 @@ angular.module("vvApp", ['ui.router'])
                 url: "/templates/pop.html",
                 templateUrl: "./templates/pop.html",
             })
-            .state("country", {
-                url: "/templates/country.html",
-                templateUrl: "./templates/country.html"
+            .state("getlost", {
+                url: "/templates/getlost.html",
+                templateUrl: "./templates/getlost.html"
             })
             .state("state", {
                 url: "/templates/state.html",
                 templateUrl: "./templates/state.html"
             })
             .state("attract", {
-                url: "/templates/attract.html",
-                templateUrl: "./templates/attract.html"
+                 url: "/templates/attract.html",
+                 templateUrl: "./templates/attract.html"
             });
 
 
