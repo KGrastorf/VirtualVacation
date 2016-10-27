@@ -84,9 +84,9 @@ a {
 }
 
  .threesixty {
-   display: flex;
+   /*display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-around;*/
    /*float: left;*/
    border: 20px solid white;
    height: 350px;
@@ -94,13 +94,11 @@ a {
    margin: 30px 30px 30px 30px;
  }
 
-.pano {
-
-}
 
 div #flex {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 30px;
 }
 
 .pano {
@@ -118,8 +116,42 @@ div #flex {
   width: 465px;
 }
 
-.transform {
-  -ms-transform: rotate(-9deg); /* IE 9 */
-  -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
-  transform: rotate(-9deg);
-}
+.transform1 {
+    position: relative;
+    -webkit-animation: mymove 4s; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+.transform2 {
+    position: relative;
+    -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+  }
+
+.transform3 {
+    position: relative;
+    -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+.transform4 {
+    position: relative;
+    -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  @-webkit-keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
+
+  @keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
