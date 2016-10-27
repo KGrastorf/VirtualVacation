@@ -1,17 +1,9 @@
-<h1 class="where">Get Lost</h1>
+<div ng-repeat="go in dest" id="flex">
 
-<div class="threesixty" id="left">
-  <a href="#"><img src="" alt="" /></a>
-</div>
 
-<div class="threesixty" id="right">
-  <a href="#"><img src="" alt="" /></a>
-</div>
+    <h1 class="where">{{go.name}}</h1>
 
-<div class="threesixty" id="left">
-  <a href="#"><img src="" alt="" /></a>
-</div>
-
-<div class="threesixty" id="right">
-  <a href="#"><img src="" alt="" /></a>
+    <div class="threesixty transform1" id="left">
+        <a class="pic" href="#"><img class="large" src="{{go.pic.url}}" /></a>
+    </div>
 </div>

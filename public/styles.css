@@ -50,15 +50,6 @@ a {
   vertical-align: top;
 }
 
-/*.tab2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 0;
-}*/
-
 .vv {
   font-size: 80px;
   padding-left: 60px
@@ -71,7 +62,6 @@ a {
 }
 
 .view {
-  /*margin-left: 30px;*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;;;
@@ -84,11 +74,8 @@ a {
 }
 
  .threesixty {
-   /*display: flex;
-   flex-direction: row;
-   justify-content: space-around;*/
-   /*float: left;*/
    border: 20px solid white;
+   box-shadow: 10px 10px 5px #333333;
    height: 350px;
    width: 465px;
    margin: 30px 30px 30px 30px;
@@ -117,6 +104,9 @@ div #flex {
 }
 
 .transform1 {
+  -ms-transform: rotate(-9deg); /* IE 9 */
+  -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+  transform: rotate(-9deg);
     position: relative;
     -webkit-animation: mymove 4s; /* Safari 4.0 - 8.0 */
     animation: mymove 4s;
@@ -125,6 +115,9 @@ div #flex {
   }
 
 .transform2 {
+  -ms-transform: rotate(-9deg); /* IE 9 */
+  -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+  transform: rotate(-9deg);
     position: relative;
     -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
     animation: mymove 2s;
@@ -133,17 +126,23 @@ div #flex {
   }
 
 .transform3 {
+  -ms-transform: rotate(-9deg); /* IE 9 */
+  -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+  transform: rotate(-9deg);
     position: relative;
-    -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
-    animation: mymove 1s;
+    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
 .transform4 {
+  -ms-transform: rotate(-9deg); /* IE 9 */
+  -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+  transform: rotate(-9deg);
     position: relative;
-    -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
-    animation: mymove 2s;
+    -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }

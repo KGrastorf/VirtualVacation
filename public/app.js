@@ -13,13 +13,21 @@ angular.module("vvApp", ['ui.router'])
                 url: "/templates/getlost.html",
                 templateUrl: "./templates/getlost.html"
             })
-            .state("state", {
-                url: "/templates/state.html",
-                templateUrl: "./templates/state.html"
+            .state("gallery", {
+                url: "/templates/gallery.html",
+                templateUrl: "./templates/gallery.html"
             })
             .state("attract", {
                  url: "/templates/attract.html",
                  templateUrl: "./templates/attract.html"
+             })
+             .state("videos", {
+                 url: "/templates/videos.html",
+                 templateUrl: "./templates/videos.html"
+             })
+             .state("threeSixties", {
+                  url: "/templates/threeSixties.html",
+                  templateUrl: "./templates/threeSixties.html"
             });
 
 
@@ -27,6 +35,3 @@ angular.module("vvApp", ['ui.router'])
 
 
     });
-
-
-    
