@@ -3,37 +3,37 @@ angular.module("vvApp")
   this.getDest = function() {
       return $http({
           method: "GET",
-          url: "/dest"
+          url: "/attr"
       }).then(function(response) {
           return response.data;
       });
   };
 
-  this.newDest = function(attr) {
+  this.newDest = function(place) {
       return $http({
           method: "POST",
-          url: "/dest",
-          data: attr
+          url: "/attr",
+          data: place
       }).then(function(response) {
           console.log(response);
           return response.data;
       });
   };
 
-  this.changeDest = function(attr) {
+  this.changeDest = function(place) {
       return $http({
           method: "PUT",
-          url: "/dest/" + attr._id,
-          data: attr
+          url: "/attr/" + place._id,
+          data: place
   }).then(function(response) {
           return response;
       });
   };
 
-  this.deleteDest = function(attr) {
+  this.deleteDest = function(place) {
       return $http({
           method: "DELETE",
-          url: "/dest/" + attr._id
+          url: "/attr/" + place._id
   }).then(function(response) {
           return response;
       });

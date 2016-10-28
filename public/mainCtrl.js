@@ -38,3 +38,6 @@ angular.module("vvApp")
   });
 
   });
+  $scope.coverFilter = function(item) {
+      return item === 'YNP Cover';
+  };

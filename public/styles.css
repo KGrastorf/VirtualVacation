@@ -81,6 +81,9 @@ a {
    margin: 30px 30px 30px 30px;
  }
 
+.name {
+  text-align: center;
+}
 
 div #flex {
   display: flex;

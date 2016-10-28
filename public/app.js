@@ -35,3 +35,7 @@ angular.module("vvApp", ['ui.router'])
 
 
     });
+
+    $scope.coverFilter = function (item) {
+  return item === 'YNP Cover'; 
+};

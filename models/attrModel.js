@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var attrSchema = new mongoose.Schema({
     name: String,
     type: String,
+    tag: String,
     rating: Number,
     pic: [{
         name: String,
