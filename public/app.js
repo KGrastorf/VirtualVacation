@@ -2,7 +2,7 @@ angular.module("vvApp", ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state("home", {
-                url: "/templates/home.html",
+                url: "/home",
                 templateUrl: "./templates/home.html"
             })
             .state("pop", {
@@ -18,24 +18,20 @@ angular.module("vvApp", ['ui.router'])
                 templateUrl: "./templates/gallery.html"
             })
             .state("attract", {
-                 url: "/templates/attract.html",
-                 templateUrl: "./templates/attract.html"
-             })
-             .state("videos", {
-                 url: "/templates/videos.html",
-                 templateUrl: "./templates/videos.html"
-             })
-             .state("threeSixties", {
-                  url: "/templates/threeSixties.html",
-                  templateUrl: "./templates/threeSixties.html"
+                url: "/attract/:attractId",
+                templateUrl: "./templates/attract.html"
+            })
+            .state("videos", {
+                url: "/templates/videos.html",
+                templateUrl: "./templates/videos.html"
+            })
+            .state("threeSixties", {
+                url: "/templates/threeSixties.html",
+                templateUrl: "./templates/threeSixties.html"
             });
 
 
-        $urlRouterProvider.otherwise('/templates/home.html');
+        $urlRouterProvider.otherwise('/home');
 
 
     });
-
-    $scope.coverFilter = function (item) {
-  return item === 'YNP Cover'; 
-};

@@ -2,20 +2,8 @@
 
 <div id="flex">
 
-    <div ng-model="see" class="threesixty transform1">
-        <a ng-click="showDest(see)" class="pic" ui-sref="attract"><img class="large" src="./../images/YNP.jpg" alt="" /></a>
-    </div>
-
-    <div ng-model="see" class="threesixty transform2">
-        <a ng-click="showDest(see)" class="pic" ui-sref="attract"><img class="large" src="./../images/Glacier.jpg" alt="" /></a>
-    </div>
-
-    <div ng-model="see" class="threesixty transform3">
-        <a ng-click="showDest(see)" class="pic" ui-sref="attract"><img class="large" src="./../images/Bozeman.jpg" alt="" /></a>
-    </div>
-
-    <div ng-model="see" class="threesixty transform4">
-        <a ng-click="showDest(see)" class="pic" ui-sref="attract"><img class="large" src="./../images/Missoula.jpg" alt="" /></a>
-    </div>
-
+  <div class="threesixty transform1" ng-repeat="place in places">
+          <a ui-sref="attract({attractId: place._id})"><img ng-src="{{place.pic.url}}"/></a>
+          <h4 class="where2">{{place.name}}</h4>
+      </div>
 </div>

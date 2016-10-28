@@ -1,15 +1,16 @@
 angular.module("vvApp")
-.controller("mainCtrl", function($scope, mainServ){
-  $scope.places;
+.controller("mainCtrl", function($scope, mainServ, $state){
   $scope.focused = false;
 
   $scope.showDest = function() {
       mainServ.getDest()
           .then(function(response) {
-              $scope.place = response;
+              $scope.places = response;
           });
   };
   $scope.showDest();
+
+
 
   $scope.addDest = function(place) {
       var addObj = {
@@ -37,7 +38,13 @@ angular.module("vvApp")
           });
   });
 
-  });
-  $scope.coverFilter = function(item) {
-      return item === 'YNP Cover';
+  $scope.getAttr = function() {
+    for (var i = 0; i < $scope.places.length; i++) {
+      console.log($scope.places[i]._id);
+      if ($state.params.attractId == $scope.places[i]._id) {
+        $scope.oneAttr = $scope.places[i];
+      }
+    }
   };
+
+  });

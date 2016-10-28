@@ -1,9 +1,9 @@
-<div ng-repeat="go in dest" id="flex">
 
 
-    <h1 class="where">{{go.name}}</h1>
 
-    <div class="threesixty transform1" id="left">
-        <a class="pic" href="#"><img class="large" src="{{go.pic.url}}" /></a>
+    <h1 class="where">Throw a dart on the map!</h1>
+<div id="flex">
+    <div ng-model="thing in things | randomFilter" class="threesixty transform1" id="left">
+        <a class="pic" href="#"><img class="large" src="{{thing.pic.url}}" /></a>
     </div>
 </div>

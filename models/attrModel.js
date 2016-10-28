@@ -7,21 +7,19 @@ var attrSchema = new mongoose.Schema({
     type: String,
     tag: String,
     rating: Number,
-    pic: [{
+    pic: {
         name: String,
         url: String
-    }],
-    vid: [{
+    },
+    vid: {
         name: String,
         url: String
-    }],
-    threeSixty: [{
+    },
+    threeSixty: {
         name: String,
         url: String
-    }]
+    }
 });
-
-
 
 
 module.exports = mongoose.model("Attr", attrSchema);

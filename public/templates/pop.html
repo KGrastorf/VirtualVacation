@@ -1,9 +1,7 @@
-<div ng-repeat="" id="flex">
-
 
     <h1 class="where">Most Popular Destinations</h1>
-
-    <div class="threesixty" id="left">
-        <a href="{{}}"><img class="large" src="{{}}" /></a>
+<div id="flex">
+    <div class="threesixty transform2" id="left">
+        <a ng-repeat="thing in things" href="{{thing}}"><img class="large" src="{{thing.pic.url}}" /></a>
     </div>
 </div>
