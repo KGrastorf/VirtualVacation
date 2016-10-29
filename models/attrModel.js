@@ -9,15 +9,18 @@ var attrSchema = new mongoose.Schema({
     rating: Number,
     pic: {
         name: String,
-        url: String
+        url: String,
+        tag: String
     },
     vid: {
         name: String,
-        url: String
+        url: String,
+        tag: String
     },
     threeSixty: {
         name: String,
-        url: String
+        url: String,
+        tag: String
     }
 });
 

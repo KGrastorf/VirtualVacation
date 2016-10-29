@@ -1,9 +1,9 @@
 
-
-
+<div  ng-init="getAttr(); window.scrollTo(0, 0)">
     <h1 class="where">Throw a dart on the map!</h1>
 <div id="flex">
-    <div ng-model="thing in things | randomFilter" class="threesixty transform1" id="left">
-        <a class="pic" href="#"><img class="large" src="{{thing.pic.url}}" /></a>
+    <div ng-repeat="place in places" class="threesixty {{place.tag}}" id="left">
+        <a class="pic"><img class="large" src="{{place.pic.url}}" /></a>
     </div>
+</div>
 </div>

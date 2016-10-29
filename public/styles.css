@@ -9,7 +9,6 @@ font-family: 'Amita', cursive;*/
 body {
   margin: 0;
   font-family: 'Satisfy', cursive;
-  /*background-color: #31b0ec;*/
   background-image: url("images/Sky 1.jpg");
   background-size: 150%;
   width: 100vw;
@@ -18,10 +17,10 @@ body {
 header {
   height: 80px;
   width: 100vw;
-  background-color: #1d3b6a;
+  background-color: #1a3b6a;
+  background: linear-gradient(rgb(54, 102, 210) ,rgb(26, 70, 181), #102f5c);
   margin: 0;
   padding: 0;
-  /*background-image: url("images/Clouds Banner.png");*/
   background-position: center;
   background-size: 500vh;
   color: white;
@@ -95,7 +94,7 @@ a {
    width: 100%;
  }
 
- .threesixty a, .threesixty a embed {
+ .threesixty a, .threesixty a iframe {
    height: 100%;
    width: 100%;
  }
@@ -157,8 +156,8 @@ div #flex {
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
     position: relative;
-    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s;
+    -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
@@ -168,8 +167,8 @@ div #flex {
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
     position: relative;
-    -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
-    animation: mymove 3s;
+    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }

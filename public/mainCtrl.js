@@ -40,7 +40,6 @@ angular.module("vvApp")
 
   $scope.getAttr = function() {
     for (var i = 0; i < $scope.places.length; i++) {
-      console.log($scope.places[i]._id);
       if ($state.params.attractId == $scope.places[i]._id) {
         $scope.oneAttr = $scope.places[i];
       }
