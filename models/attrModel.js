@@ -7,6 +7,7 @@ var attrSchema = new mongoose.Schema({
     type: String,
     tag: String,
     rating: Number,
+    greet: String,
     pic: {
         name: String,
         url: String,

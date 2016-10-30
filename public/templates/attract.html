@@ -6,6 +6,7 @@
 <div  id="flex">
     <div class="threesixty {{oneAttr.pic.tag}}" id="left">
 <a href="#"><img ng-src={{oneAttr.pic.url}} alt="" /></a>
+<h4 class="where2">{{place.name}}</h4>
   </div>
   <div class="threesixty {{oneAttr.vid.tag}}" id="left">
 <a href="#"><iframe width="560" height="315" ng-src={{oneAttr.vid.url}} frameborder="0" allowfullscreen></iframe></a>
@@ -14,20 +15,3 @@
 <a href="#"><iframe ng-src={{oneAttr.threeSixty.url}} width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></a>
   </div>
 </div>
-
-
-<!-- <div ng-repeat="thing in things | filter: coverFilter " class="name">
-    <h2 class="where">{{thing.name}}</h2>
-</div>
-
-<div  id="flex">
-    <div class="threesixty transform1" id="left">
-        <a ng-repeat="thing in things" class="pic" ui-sref="gallery"><img class="large" src="{{thing.pic.url}}" alt="" /></a>
-    </div>
-    <div class="threesixty transform2" id="left">
-        <a ng-repeat="thing in things"  class="pic" ui-sref="videos"><img class="large" src="{{thing.vid.url}}" alt="" /></a>
-    </div>
-    <div class="threesixty transform3" id="left">
-        <a ng-repeat="thing in things" class="pic" ui-sref="threeSixties"><iframe src=“{{thing.threeSixty.url}}” width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></a>
-    </div>
-</div> -->

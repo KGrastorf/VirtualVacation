@@ -34,13 +34,21 @@ header {
   text-shadow: 2px 2px white;
 }
 
+.greet {
+  margin-top: -380;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 20px;
+  padding: 0;
+}
+
 .where2 {
   text-align: center;
   font-size: 30px;
-  color: black;
-  text-shadow: 2px 2px white;
+  color: white;
+  text-shadow: 2px 2px black;
   padding: 0;
-  margin-top: 15px;
+  margin-top: -70px;
 }
 
 a {

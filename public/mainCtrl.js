@@ -39,6 +39,7 @@ angular.module("vvApp")
   });
 
   $scope.getAttr = function() {
+    window.scrollTo(0, 0);
     for (var i = 0; i < $scope.places.length; i++) {
       if ($state.params.attractId == $scope.places[i]._id) {
         $scope.oneAttr = $scope.places[i];
