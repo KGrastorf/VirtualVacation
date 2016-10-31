@@ -4,14 +4,26 @@
 
 
 <div  id="flex">
-    <div class="threesixty {{oneAttr.pic.tag}}" id="left">
-<a href="#"><img ng-src={{oneAttr.pic.url}} alt="" /></a>
-<h4 class="where2">{{place.name}}</h4>
-  </div>
-  <div class="threesixty {{oneAttr.vid.tag}}" id="left">
-<a href="#"><iframe width="560" height="315" ng-src={{oneAttr.vid.url}} frameborder="0" allowfullscreen></iframe></a>
-  </div>
-  <div class="threesixty {{oneAttr.threeSixty.tag}}" id="left">
-<a href="#"><iframe ng-src={{oneAttr.threeSixty.url}} width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></a>
-  </div>
+    <div class="threesixty {{oneAttr.pic.tag}}">
+      <a href="#">
+        <img ng-src={{oneAttr.pic.url}} alt="{{oneAttr.pic.alt}}" />
+      </a>
+      <h4 class="where2">{{place.name}}</h4>
+    </div>
+    <div class="threesixty {{oneAttr.vid.tag}}">
+      <a href="#">
+        <!-- {{oneAttr.vid.url}} -->
+        <span ng-bind-html="trust(oneAttr.vid.url)"></span>
+      </a>
+    </div>
+    <div class="threesixty {{oneAttr.threeSixty.tag}}">
+      <a href="#">
+          <!-- {{oneAttr.threeSixty.url}} -->
+          <span ng-bind-html="trust(oneAttr.threeSixty.url)"></span>
+      </a>
+    </div>
 </div>
+
+<!-- class="threesixty {{oneAttr.vid.tag}}" -->
+<!-- https://youtu.be/-XkewnRxv-A -->
+<!-- https://www.youtube.com/embed/-XkewnRxv-A -->

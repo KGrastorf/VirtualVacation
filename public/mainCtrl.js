@@ -1,5 +1,5 @@
 angular.module("vvApp")
-.controller("mainCtrl", function($scope, mainServ, $state){
+.controller("mainCtrl", function($scope, mainServ, $state, $sce){
   $scope.focused = false;
 
   $scope.showDest = function() {
@@ -43,8 +43,10 @@ angular.module("vvApp")
     for (var i = 0; i < $scope.places.length; i++) {
       if ($state.params.attractId == $scope.places[i]._id) {
         $scope.oneAttr = $scope.places[i];
+        console.log($scope.oneAttr)
       }
     }
   };
+  $scope.trust = $sce.trustAsHtml;
 
   });

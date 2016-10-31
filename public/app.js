@@ -6,27 +6,27 @@ angular.module("vvApp", ['ui.router'])
                 templateUrl: "./templates/home.html"
             })
             .state("pop", {
-                url: "/templates/pop.html",
+                url: "/pop.html",
                 templateUrl: "./templates/pop.html",
             })
             .state("getlost", {
-                url: "/templates/getlost.html",
+                url: "/getlost.html",
                 templateUrl: "./templates/getlost.html"
             })
             .state("gallery", {
-                url: "/templates/gallery.html",
+                url: "/gallery.html",
                 templateUrl: "./templates/gallery.html"
             })
             .state("attract", {
-                url: "/attract/:attractId",
+                url: "/:attractId",
                 templateUrl: "./templates/attract.html"
             })
             .state("videos", {
-                url: "/templates/videos.html",
+                url: "/videos.html",
                 templateUrl: "./templates/videos.html"
             })
             .state("threeSixties", {
-                url: "/templates/threeSixties.html",
+                url: "/threeSixties.html",
                 templateUrl: "./templates/threeSixties.html"
             });
 

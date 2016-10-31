@@ -11,17 +11,20 @@ var attrSchema = new mongoose.Schema({
     pic: {
         name: String,
         url: String,
-        tag: String
+        tag: String,
+        alt: String
     },
     vid: {
         name: String,
         url: String,
-        tag: String
+        tag: String,
+        alt: String
     },
     threeSixty: {
         name: String,
         url: String,
-        tag: String
+        tag: String,
+        alt: String
     }
 });
 

@@ -1,10 +1,10 @@
-
+<div  ng-init="getAttr(); window.scrollTo(0, 0)">
     <h1 class="where">Most Popular Destinations</h1>
 
-    <dnpmiv  ng-init="getAttr(); window.scrollTo(0, 0)">
+
     <div id="flex">
         <div ng-repeat="place in places" class="threesixty {{place.tag}}" id="left">
-            <a class="pic"><img class="large" src="{{place.pic.url}}" /></a>
+            <a ui-sref="attract({attractId: place._id})" class="pic"><img class="large" src="{{place.pic.url}}" /></a>
             <h4 class="where2">{{place.name}}</h4>
         </div>
     </div>
