@@ -1,7 +1,10 @@
-<div  id="flex">
-  
-</div>
-  <div class="threesixty {{oneAttr.vid.tag}}" id="left">
-<a href="#"><iframe width="560" height="315" ng-src={{trustAsResourceUrl(oneAttr.vid.url)}} frameborder="0" allowfullscreen></iframe></a>
-  </div>
+
+<h1 class="where">Videos</h1>
+<div id="flex">
+    <div class="threesixty {{oneAttr.vid.tag}}">
+        <a>
+            <span ng-bind-html="trust(oneAttr.vid.url)"></span>
+        </a>
+        <h4 class="label">{{oneAttr.vid.name}}</h4>
+    </div>
 </div>

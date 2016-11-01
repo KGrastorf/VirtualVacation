@@ -1,29 +1,19 @@
 <div ng-init="getAttr(); window.scrollTo(0, 0)">
-<h1 class="where">{{oneAttr.name}}</h1>
+    <h1 class="where">{{oneAttr.name}}</h1>
 </div>
 
 
-<div  id="flex">
+<div id="flex">
     <div class="threesixty {{oneAttr.pic.tag}}">
-      <a href="#">
-        <img ng-src={{oneAttr.pic.url}} alt="{{oneAttr.pic.alt}}" />
-      </a>
-      <h4 class="where2">{{place.name}}</h4>
+        <a><img ng-src={{oneAttr.pic.url}} alt="{{oneAttr.pic.alt}}" /></a>
+        <button class="labelButton" ui-sref="gallery({galleryId: place.pic._id})">Pictures</button>
     </div>
     <div class="threesixty {{oneAttr.vid.tag}}">
-      <a href="#">
-        <!-- {{oneAttr.vid.url}} -->
-        <span ng-bind-html="trust(oneAttr.vid.url)"></span>
-      </a>
+        <a><span ng-bind-html="trust(oneAttr.vid.url)"></span></a>
+        <button class="labelButton" ui-sref="videos({videosId: place.vid._id})">Videos</button>
     </div>
     <div class="threesixty {{oneAttr.threeSixty.tag}}">
-      <a href="#">
-          <!-- {{oneAttr.threeSixty.url}} -->
-          <span ng-bind-html="trust(oneAttr.threeSixty.url)"></span>
-      </a>
+        <a><span ng-bind-html="trust(oneAttr.threeSixty.url)"></span></a>
+        <button class="labelButton" ui-sref="threeSixties({threeSixtiesId: place/threeSixty._id})">360's</button>
     </div>
 </div>
-
-<!-- class="threesixty {{oneAttr.vid.tag}}" -->
-<!-- https://youtu.be/-XkewnRxv-A -->
-<!-- https://www.youtube.com/embed/-XkewnRxv-A -->

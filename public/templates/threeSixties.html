@@ -1,5 +1,10 @@
-<div  id="flex">
-  <div class="threesixty {{oneAttr.threeSixty.tag}}" id="left">
-<a href="#"><iframe ng-src={{trustAsResourceUrl(oneAttr.threeSixty.url)}} width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></a>
-  </div>
+
+<h1 class="where">360's</h1>
+<div id="flex">
+    <div class="threesixty {{oneAttr.threeSixty.tag}}">
+        <a>
+            <span ng-bind-html="trust(oneAttr.threeSixty.url)"></span>
+        </a>
+        <h4 class="label">{{oneAttr.threeSixty.name}}</h4>
+    </div>
 </div>

@@ -1,6 +1,10 @@
 
-<div  id="flex">
-    <div class="threesixty {{oneAttr.pic.tag}}" id="left">
-<a href="#"><img ng-src={{oneAttr.pic.url}} alt="" /></a>
-<h4 class="where2">{{place.name}}</h4>
-</div>
+        <h1  class="where">Pictures</h1>
+    <div id="flex">
+        <div class="threesixty {{oneAttr.pic.tag}}">
+            <a>
+                <img ng-src={{oneAttr.pic.url}} alt="" />
+            </a>
+            <h4 class="label">{{oneAttr.pic.name}}</h4>
+        </div>
+    </div>

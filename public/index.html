@@ -13,9 +13,11 @@
     <header>
         <div class="tabs" id="left-nav">
             <a class="link" ui-sref="home">Montana</a>
-            <a class="link" ui-sref="pop">Most Popular</a>
+            <a class="link" ui-sref="pop({popId: place._id})">Most Popular</a>
             <a class="link" ui-sref="getlost">Get Lost</a>
             <a class="vv" href="#">Virtual Vacation</a>
+            <input class="search" type="text">
+            <button class="search1" type="submit">Find Your Place</button>
         </div>
         <div class="tab2"></div>
     </header>
