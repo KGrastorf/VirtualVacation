@@ -1,7 +1,7 @@
 
         <h1  class="where">Pictures</h1>
     <div id="flex">
-        <div class="threesixty {{oneAttr.pic.tag}}">
+        <div class="threesixty {{oneAttr.pic.tag}}" ng-repeat="pic in oneAttr.pic">
             <a>
                 <img ng-src={{oneAttr.pic.url}} alt="" />
             </a>

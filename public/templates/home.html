@@ -2,7 +2,7 @@
 <img class="greetings transform5" src="./../images/Greetings.png" alt="" />
 <!-- <h1 class="where">Where in Montana would you like to go ?</h1> -->
 <div id="flex">
-  <div class="threesixty {{place.tag}}" ng-repeat="place in places">
+  <div class="threesixty {{place.tag}}" ng-repeat="place in places | filter: filterer">
           <a ui-sref="attract({attractId: place._id})"><img ng-src="{{place.pic.url}}"/></a>
           <!-- <h4 class="greet">{{place.greet}}</h4> -->
           <h4 class="where2">{{place.name}}</h4>

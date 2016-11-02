@@ -6,14 +6,14 @@
 <div id="flex">
     <div class="threesixty {{oneAttr.pic.tag}}">
         <a><img ng-src={{oneAttr.pic.url}} alt="{{oneAttr.pic.alt}}" /></a>
-        <button class="labelButton" ui-sref="gallery({galleryId: place.pic._id})">Pictures</button>
+        <button class="labelButton" ui-sref="gallery({galleryId: oneAttr._id})">Pictures</button>
     </div>
     <div class="threesixty {{oneAttr.vid.tag}}">
         <a><span ng-bind-html="trust(oneAttr.vid.url)"></span></a>
-        <button class="labelButton" ui-sref="videos({videosId: place.vid._id})">Videos</button>
+        <button class="labelButton" ui-sref="videos({videosId: oneAttr._id})">Videos</button>
     </div>
     <div class="threesixty {{oneAttr.threeSixty.tag}}">
         <a><span ng-bind-html="trust(oneAttr.threeSixty.url)"></span></a>
-        <button class="labelButton" ui-sref="threeSixties({threeSixtiesId: place/threeSixty._id})">360's</button>
+        <button class="labelButton" ui-sref="threeSixties({threeSixtiesId: oneAttr._id})">360's</button>
     </div>
 </div>

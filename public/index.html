@@ -16,8 +16,7 @@
             <a class="link" ui-sref="pop({popId: place._id})">Most Popular</a>
             <a class="link" ui-sref="getlost">Get Lost</a>
             <a class="vv" href="#">Virtual Vacation</a>
-            <input class="search" type="text">
-            <button class="search1" type="submit">Find Your Place</button>
+            <input id="search" type="text" placeholder="Enter a Destination" ng-model="filterer">
         </div>
         <div class="tab2"></div>
     </header>
@@ -29,6 +28,7 @@
     <script src="app.js"></script>
     <script src="mainCtrl.js"></script>
     <script src="mainServ.js"></script>
+    <script src="searchCtrl.js"></script>
 </body>
 
 </html>

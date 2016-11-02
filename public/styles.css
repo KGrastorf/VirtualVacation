@@ -39,10 +39,11 @@ header {
   width: auto;
 }
 
-.search {
+#search {
   height: 30px;
   width: 200px;
   margin: 40px 0 0 50px;
+  font-size: 20px;
 }
 
 .search1 {
