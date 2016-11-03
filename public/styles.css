@@ -9,8 +9,9 @@ font-family: 'Amita', cursive;*/
 body {
   margin: 0;
   font-family: 'Satisfy', cursive;
-  background-image: url("images/Sky 1.jpg");
-  background-size: 150%;
+  background-image: url("images/sky.jpg");
+  background-attachment: fixed;
+  opacity: 1;
   width: 100vw;
 }
 
@@ -27,22 +28,27 @@ header {
   text-shadow: 1px 1px black;
 }
 
+#up {
+  margin-top: -50;
+}
+
 .marginBox {
   margin-top: 0;
   padding-top: 0;
 }
 
 .greetings {
-  margin: 50px 0 0 -20px;
+  margin: 50px 0 -150px -20px;
   padding: 0;
   height: 20vh;
   width: auto;
+position: sticky;
 }
 
 #search {
   height: 30px;
-  width: 200px;
-  margin: 40px 0 0 50px;
+  width: 400px;
+  margin: 20px 0 0 50px;
   font-size: 20px;
 }
 
@@ -60,8 +66,8 @@ header {
 .where {
   text-align: center;
   font-size: 60px;
-  color: black;
-  text-shadow: 2px 2px white;
+  color: white;
+  text-shadow: 5px 5px black;
 }
 
 .greet {
