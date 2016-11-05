@@ -5,7 +5,7 @@
 <h1 class="where" id="up">The Big Sky state!</h1>
 <div id="flex">
   <div class="threesixty {{place.tag}}" ng-repeat="place in places | filter: filterer">
-          <a ui-sref="attract({attractId: place._id})"><img ng-src="{{place.pic.url}}"/></a>
+          <a ui-sref="attract({attractId: place._id})"><img ng-src="{{place.pic[0].url}}"/></a>
           <!-- <h4 class="greet">{{place.greet}}</h4> -->
           <h4 class="where2">{{place.name}}</h4>
       </div>

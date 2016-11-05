@@ -1,9 +1,9 @@
 
 <h1 class="where">360's</h1>
 <div id="flex">
-    <div class="threesixty {{oneAttr.threeSixty.tag}}">
+    <div class="threesixty {{threeSixty.tag}}" ng-repeat="threeSixty in oneAttr.threeSixty">
         <a>
-            <span ng-bind-html="trust(oneAttr.threeSixty.url)"></span>
+            <span ng-bind-html="trust(threeSixty.url)"></span>
         </a>
         <!-- <h4 class="label">{{oneAttr.threeSixty.name}}</h4> -->
     </div>

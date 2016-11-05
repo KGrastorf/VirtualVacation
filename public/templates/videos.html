@@ -1,9 +1,9 @@
 
 <h1 class="where">Videos</h1>
 <div id="flex">
-    <div class="threesixty {{oneAttr.vid.tag}}">
+    <div class="threesixty {{vid.tag}}" ng-repeat="vid in oneAttr.vid">
         <a>
-            <span ng-bind-html="trust(oneAttr.vid.url)"></span>
+            <span ng-bind-html="trust(vid.url)"></span>
         </a>
         <!-- <h4 class="label">{{oneAttr.vid.name}}</h4> -->
     </div>

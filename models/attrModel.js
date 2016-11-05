@@ -8,24 +8,24 @@ var attrSchema = new mongoose.Schema({
     tag: String,
     rating: Number,
     greet: String,
-    pic: {
+    pic: [{
         name: String,
         url: String,
         tag: String,
         alt: String
-    },
-    vid: {
+    }],
+    vid: [{
         name: String,
         url: String,
         tag: String,
         alt: String
-    },
-    threeSixty: {
+    }],
+    threeSixty: [{
         name: String,
         url: String,
         tag: String,
         alt: String
-    }
+    }]
 });
 
 

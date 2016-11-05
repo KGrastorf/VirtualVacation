@@ -66,10 +66,10 @@ position: sticky;
 .where {
   text-align: center;
   font-size: 60px;
-  color: white;
-  text-shadow: 5px 5px black;
+  color: black;
+  text-shadow: 5px 5px white;
 }
-
+ /*rgb(16, 21, 142)*/
 .greet {
   margin-top: -380;
   color: white;
