@@ -1,8 +1,14 @@
 
 
+<!-- <script type="text/javascript">$('<input id="search" type="text" placeholder="Enter a Destination" ng-model="filterer">').appendTo('header'); -->
+<div>
+  <img class="greetings" src="./../images/Greetings.png" alt="" />
+  <!-- <img src="./../images/postmark.png" alt="postmark" class="postmark" /> -->
+</div>
+<div class="title">
+<h4 class="where1">Montana!</h4>
+</div>
 
-<img class="greetings transform5" src="./../images/Greetings.png" alt="" />
-<h1 class="where" id="up">The Big Sky state!</h1>
 <div id="flex">
   <div class="threesixty {{place.tag}}" ng-repeat="place in places | filter: filterer">
           <a ui-sref="attract({attractId: place._id})"><img ng-src="{{place.pic[0].url}}"/></a>
