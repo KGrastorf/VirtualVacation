@@ -49,6 +49,18 @@ angular.module("vvApp")
   $scope.trust = $sce.trustAsHtml;
 
 
+  var myApp = angular.module('myApp',[]);
+
+//myApp.directive('myDirective', function() {});
+//myApp.factory('myService', function() {});
+
+function MyCtrl($scope) {
+    $scope.list = attr;
+    $scope.random = function() {
+        return 0.5 - Math.random();
+    }
+}
+
   // $window.globalScope.$location.url("/");
   //               $scope.$apply();
 

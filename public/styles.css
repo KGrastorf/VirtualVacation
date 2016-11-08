@@ -1,3 +1,7 @@
+/*font-family: 'Diplomata SC', cursive;
+font-family: 'Ewert', cursive;*/
+
+
 body {
   margin: 0;
   font-family: 'Satisfy', cursive;
@@ -26,7 +30,7 @@ header {
   position: absolute;
   right: 0;
   margin-top: 100px;
-
+  z-index: -10;
 }
 
 /*#up {
@@ -70,13 +74,18 @@ header {
   font-size: 60px;
   color: black;
   /*text-shadow: 5px 5px white;*/
+  font-family: 'Bungee Shade', cursive;
+  z-index: 199;
 }
 
 .where1 {
   font-size: 80px;
   text-align: center;
   color: black;
+  font-family: 'Bungee Shade', cursive;
+  z-index: 199;
   /*text-shadow: 5px 5px ;*/
+  padding-top: 20px;
 }
 
 .greet {
@@ -170,6 +179,7 @@ div #flex {
   display: flex;
   flex-wrap: wrap;
   margin: 0 120px 0 120px;
+  z-index: 30;
 }
 
 .pano {

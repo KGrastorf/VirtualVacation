@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amita|Bangers|Cookie|Courgette|Michroma|Niconne|Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amita|Bangers|Cookie|Courgette|Michroma|Niconne|Satisfy|Bungee+Shade|Diplomata+SC|Ewert" rel="stylesheet">
     <title>Virtual Vacation</title>
 </head>
 
@@ -13,7 +13,7 @@
     <header>
         <div class="tabs" id="left-nav">
             <a class="link" ui-sref="home">Montana</a>
-            <a class="link" ui-sref="pop({popId: place._id})">Most Popular</a>
+            <a class="link" ui-sref="pop">Most Popular</a>
             <a class="link" ui-sref="getlost">Get Lost</a>
             <a class="vv" href="#">Virtual Vacation</a>
             <input type="text" name="name" placeholder="Enter Destination" id="search" ng-model="filterer">
@@ -21,7 +21,7 @@
         <div class="tab2"></div>
     </header>
     <div>
-      <img src="./../images/postmark.png" alt="postmark" class="postmark" />
+     <img src="./../images/postmark.png" alt="postmark" class="postmark" />
     </div>
     <div class="view" id="view">
         <ui-view></ui-view>
