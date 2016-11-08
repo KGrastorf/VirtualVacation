@@ -1,7 +1,3 @@
-/*font-family: 'Diplomata SC', cursive;
-font-family: 'Ewert', cursive;*/
-
-
 body {
   margin: 0;
   font-family: 'Satisfy', cursive;
@@ -26,6 +22,14 @@ header {
   z-index: 99;
 }
 
+.button {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+  height: 300px;
+  width:300px;
+}
+
 .postmark {
   position: absolute;
   right: 0;
@@ -33,9 +37,25 @@ header {
   z-index: -10;
 }
 
-/*#up {
-  margin-top: -50;
-}*/
+.throw {
+  font-size: 50px;
+  color: black;
+}
+
+.dart {
+  height:300px;
+  width: auto;
+}
+
+.bullseye {
+  height: 150px;
+  width: auto;
+}
+
+.lost {
+  position: absolute;
+  left: 0;
+}
 
 .marginBox {
   margin-top: 0;
@@ -154,21 +174,25 @@ a {
    height: 350px;
    width: 465px;
    margin: 30px 30px 30px 30px;
+   padding: 0;
  }
 
  .threesixty a, .threesixty a img {
    height: 100%;
    width: 100%;
+   padding: 0;
  }
 
  .threesixty a, .threesixty a iframe {
    height: 100%;
    width: 100%;
+   padding: 0;
  }
 
  .threesixty a, .threesixty a iframe {
    height: 100%;
    width: 100%;
+   padding: 0;
  }
 
 .name {
@@ -225,60 +249,56 @@ div #flex1 {
     left:50%;
 }
 
+.dart {
+   cursor: url(./images/DartCur.png),auto;
+}
+
 .transform1 {
   -ms-transform: rotate(-9deg); /* IE 9 */
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
-    position: relative;
-    -webkit-animation: mymove 4s; /* Safari 4.0 - 8.0 */
-    animation: mymove 4s;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+  position: relative;
+  -webkit-animation: mymove 4s; /* Safari 4.0 - 8.0 */
+  animation: mymove 4s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   }
 
 .transform2 {
   -ms-transform: rotate(-9deg); /* IE 9 */
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
-    position: relative;
-    -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
-    animation: mymove 2s;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
+  position: relative;
+  -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   }
 
 .transform3 {
   -ms-transform: rotate(-9deg); /* IE 9 */
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
-    position: relative;
-    -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
-    animation: mymove 3s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+  position: relative;
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   }
 
 .transform4 {
   -ms-transform: rotate(-9deg); /* IE 9 */
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
   transform: rotate(-9deg);
-    position: relative;
-    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+  position: relative;
+  -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   }
 
   .transform5 {
-    -ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
-    transform: rotate(-20 deg);
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+  transform: rotate(-20 deg);
     }
-
-  @-webkit-keyframes mymove {
-  from {left: 300px;}
-  to {left: 0px;}
-
-  @keyframes mymove {
-  from {left: 300px;}
-  to {left: 0px;}

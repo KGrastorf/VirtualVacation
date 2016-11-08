@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <link href="lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amita|Bangers|Cookie|Courgette|Michroma|Niconne|Satisfy|Bungee+Shade|Diplomata+SC|Ewert" rel="stylesheet">
     <title>Virtual Vacation</title>
@@ -21,13 +22,15 @@
         <div class="tab2"></div>
     </header>
     <div>
-     <img src="./../images/postmark.png" alt="postmark" class="postmark" />
+        <img src="./../images/postmark.png" alt="postmark" class="postmark" />
     </div>
     <div class="view" id="view">
         <ui-view></ui-view>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="lightbox.js"></script>
+    <script src="grunt.js"></script>
     <script src="app.js"></script>
     <script src="mainCtrl.js"></script>
     <script src="mainServ.js"></script>
