@@ -1,0 +1,17 @@
+<div class="title" ng-init="window.scrollTo(0, 0)">
+    <h1 class="where">{{randomAttr.name}}</h1>
+</div>
+<div id="flex">
+    <div class="threesixty {{randomAttr.pic[0].tag}}">
+        <a><img ng-src={{randomAttr.pic[0].url}} alt="{{randomAttr.pic[0].alt}}" /></a>
+        <button ng-click="getAttr(randomAttr._id)" class="labelButton" ui-sref="gallery({galleryId: randomAttr._id})">Pictures</button>
+    </div>
+    <div class="threesixty {{randomAttr.vid[0].tag}}">
+        <a><span ng-bind-html="trust(randomAttr.vid[0].url)"></span></a>
+        <button ng-click="getAttr(randomAttr._id)" class="labelButton" ui-sref="videos({videosId: randomAttr._id})">Videos</button>
+    </div>
+    <div class="threesixty {{randomAttr.threeSixty[0].tag}}">
+        <a><span ng-bind-html="trust(randomAttr.threeSixty[0].url)"></span></a>
+        <button ng-click="getAttr(randomAttr._id)" class="labelButton" ui-sref="threeSixties({threeSixtiesId: randomAttr._id})">360's</button>
+    </div>
+</div>

@@ -1,12 +1,13 @@
-
-    <div class="title">
-        <h1 class="where">Throw a dart on the map!</h1>
+<div class="title">
+    <h1 class="where">Throw a dart on the map!</h1>
+</div>
+<div id="flex1">
+    <div>
+        <img src="./../images/glmt_logo.png" class "lost dart" />
+        <a ng-click="getLost()" class="dart throw">
+          <img src="./../images/Dart Board.png" class="dart" ng-hide="showGif" />
+        <img src="./../images/Dart5.gif" class="dart" ng-show="showGif" />
+        </a>
     </div>
-    <div id="flex1">
-        <div>
-            <img src="./../images/glmt_logo.png" class "lost dart" />
-            <img src="./../images/Dart5.gif" class="dart" />
-        </div>
-    </div>
-    <div class="dart button"><a href="#" class="dart throw">Throw it!</a>
-    </div>
+</div>
+<div class="dart button">Hit the bullseye to get lost in Montana.<br />Then come back and do it again!</div>

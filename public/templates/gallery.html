@@ -1,12 +1,12 @@
 <div class="title">
-</div>
+<h4 class="where3">{{oneAttr.name}}</h4>
 <h1 class="where">Pictures</h1>
+
 </div>
 <div id="flex">
     <div class="threesixty {{pic.tag}}" ng-repeat="pic in oneAttr.pic">
         <a href={{pic.url}} data-lightbox={{pic.url}}>
             <img ng-src={{pic.url}} />
         </a>
-
     </div>
 </div>

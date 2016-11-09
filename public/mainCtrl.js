@@ -38,10 +38,10 @@ angular.module("vvApp")
                 });
         });
 
-        $scope.getAttr = function() {
+        $scope.getAttr = function(id) {
             window.scrollTo(0, 0);
             for (var i = 0; i < $scope.places.length; i++) {
-                if ($state.params.attractId == $scope.places[i]._id) {
+                if (id == $scope.places[i]._id) {
                     $scope.oneAttr = $scope.places[i];
                 }
             }
@@ -54,11 +54,14 @@ angular.module("vvApp")
         //myApp.directive('myDirective', function() {});
         //myApp.factory('myService', function() {});
 
-        function MyCtrl($scope) {
-            $scope.list = attr;
-            $scope.random = function() {
-                return 0.5 - Math.random();
-            };
-        }
+        $scope.getLost = function() {
+            $scope.showGif = true;
+            var random = Math.floor(Math.random()*$scope.places.length);
+            $scope.randomAttr = $scope.places[random];
+            setTimeout(function(){
+                $state.go("dart");
+                $scope.showGif = false;
+            },3050);
+        };
 
     });

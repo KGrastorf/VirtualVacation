@@ -22,6 +22,25 @@ header {
   z-index: 99;
 }
 
+#big {
+  display: inline-block;
+}
+
+#big1 {
+  display: inline-block;
+  font-size: 80px;
+  text-shadow: 2px 2px black;
+  padding-left: 120px;
+}
+
+#small {
+  display:none;
+}
+
+#small1 {
+  display: none;
+}
+
 .button {
   text-align: center;
   margin-top: 30px;
@@ -96,6 +115,7 @@ header {
   /*text-shadow: 5px 5px white;*/
   font-family: 'Bungee Shade', cursive;
   z-index: 199;
+  margin-top: 5px;
 }
 
 .where1 {
@@ -123,6 +143,16 @@ header {
   text-shadow: 2px 2px black;
   padding: 0;
   margin-top: -70px;
+}
+
+.where3 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  /*text-shadow: 5px 5px white;*/
+  font-family: 'Bungee Shade', cursive;
+  z-index: 199;
+  margin-bottom: 0;
 }
 
 a {
@@ -253,6 +283,30 @@ div #flex1 {
    cursor: url(./images/DartCur.png),auto;
 }
 
+@media only screen and (max-width: 1425px){
+
+#big {
+  display: none;
+}
+
+#big1 {
+  display: none;
+}
+
+#small {
+  display: inline-block;
+}
+
+#small1 {
+  display: inline-block;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+  padding-left: 50px;
+}
+
+}
+
+
 .transform1 {
   -ms-transform: rotate(-9deg); /* IE 9 */
   -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
@@ -302,3 +356,11 @@ div #flex1 {
   -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
   transform: rotate(-20 deg);
     }
+
+    @-webkit-keyframes mymove {
+      from {left: 300px;}
+      to {left: 0px;}
+
+      @keyframes mymove {
+      from {left: 300px;}
+      to {left: 0px;}

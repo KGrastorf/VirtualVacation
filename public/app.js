@@ -28,6 +28,10 @@ angular.module("vvApp", ['ui.router'])
             .state("threeSixties", {
                 url: "/threeSixties/:threeSixtiesId",
                 templateUrl: "./templates/threeSixties.html"
+              })
+              .state("dart", {
+                  url: "/dart",
+                  templateUrl: "./templates/dart.html"
             });
 
 

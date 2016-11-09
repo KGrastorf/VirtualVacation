@@ -13,10 +13,10 @@
 <body ng-controller="mainCtrl">
     <header>
         <div class="tabs" id="left-nav">
-            <a class="link" ui-sref="home">Montana</a>
-            <a class="link" ui-sref="pop">Most Popular</a>
-            <a class="link" ui-sref="getlost">Get Lost</a>
-            <a class="vv" href="#">Virtual Vacation</a>
+            <a class="link" ui-sref="home"><span id="big">Montana</span><span id="small">MT</span></a>
+            <a class="link" ui-sref="pop"><span id="big">Most Popular</span><span id="small">POP</span></a>
+            <a class="link" ui-sref="getlost"><span id="big">Get Lost</span><span id="small">LOST</span></a>
+            <a href="#"><span id="big1">Virtual Vacation</span><span id="small1">V.V.</span></a>
             <input type="text" name="name" placeholder="Enter Destination" id="search" ng-model="filterer">
         </div>
         <div class="tab2"></div>
@@ -30,7 +30,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="lightbox.js"></script>
-    <script src="grunt.js"></script>
     <script src="app.js"></script>
     <script src="mainCtrl.js"></script>
     <script src="mainServ.js"></script>
